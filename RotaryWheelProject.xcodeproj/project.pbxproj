@@ -281,7 +281,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Smitkumar Nebhwani (4J829HWAFZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Smitkumar Nebhwani (4J829HWAFZ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -296,51 +297,26 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "09DDAEFA-9B78-42DE-83A9-77F24C57B097";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09DDAEFA-9B78-42DE-83A9-77F24C57B097";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
-		};
-		A402FAFB14F660A700E7C7CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		A402FAFD14F660A700E7C7CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Smitkumar Nebhwani (4J829HWAFZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Smitkumar Nebhwani (4J829HWAFZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RotaryWheelProject/RotaryWheelProject-Prefix.pch";
 				INFOPLIST_FILE = "RotaryWheelProject/RotaryWheelProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09DDAEFA-9B78-42DE-83A9-77F24C57B097";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09DDAEFA-9B78-42DE-83A9-77F24C57B097";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
-		};
-		A402FAFE14F660A700E7C7CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RotaryWheelProject/RotaryWheelProject-Prefix.pch";
-				INFOPLIST_FILE = "RotaryWheelProject/RotaryWheelProject-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -349,19 +325,17 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A402FAFA14F660A700E7C7CD /* Debug */,
-				A402FAFB14F660A700E7C7CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A402FAFC14F660A700E7C7CD /* Build configuration list for PBXNativeTarget "RotaryWheelProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A402FAFD14F660A700E7C7CD /* Debug */,
-				A402FAFE14F660A700E7C7CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

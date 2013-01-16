@@ -31,8 +31,8 @@
     // 3 - Set up rotary wheel
     SMRotaryWheel *wheel = [[SMRotaryWheel alloc] initWithFrame:CGRectMake(0, 0, 370, 370)
                                                     andDelegate:self 
-                                                   withSections:8];
-        wheel.currentWheel=1;
+                                                   withSections:8 currentWheel:1];
+    wheel.currentWheel=1;
     wheel.center = CGPointMake(160, 240);
     // 4 - Add wheel to view
     [self.view addSubview:wheel];
@@ -41,7 +41,7 @@
     
     SMRotaryWheel *wheel_2 = [[SMRotaryWheel alloc] initWithFrame:CGRectMake(0, 0, 200,200)
                                                     andDelegate:self
-                                                   withSections:8];
+                                                   withSections:8 currentWheel:2];
     wheel_2.currentWheel=2;
     wheel_2.center = CGPointMake(160, 240);
     // 4 - Add wheel to view

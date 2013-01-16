@@ -86,6 +86,7 @@ static float maxAlphavalue = 1.0;
     {
         // 2 - Set properties
         self.numberOfSections = sectionsNumber;
+        self.currentWheel = currentWheel;
         self.delegate = del;
         // 3 - Draw wheel
         [self drawWheel];
@@ -112,7 +113,16 @@ static float maxAlphavalue = 1.0;
         // 4 - Create image view
         UIImageView *im = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"segment.png"]];
         im.layer.anchorPoint = CGPointMake(1.0f, 0.5f);
-        im.frame = CGRectMake(im.frame.origin.x, im.frame.origin.y,160,60);
+        
+        if(currentWheel==1)
+        {
+            im.frame = CGRectMake(im.frame.origin.x, im.frame.origin.y,160,60);
+        }
+        else
+        {
+            //im.frame = CGRectMake(im.frame.origin.x, im.frame.origin.y,60,30);
+        }
+        
         
         im.layer.position = CGPointMake(container.bounds.size.width/2.0-container.frame.origin.x,
                                         container.bounds.size.height/2.0-container.frame.origin.y); 
@@ -144,6 +154,11 @@ static float maxAlphavalue = 1.0;
     // 7.1 - Add background image
 	UIImageView *bg = [[UIImageView alloc] initWithFrame:self.frame];
 	bg.image = [UIImage imageNamed:@"bg.png"];
+    if(currentWheel ==2)
+    {
+        //bg.image = [UIImage imageNamed:@"bg.png"];
+    }
+    
 	[self addSubview:bg];
     
     if (numberOfSections % 2 == 0) {
