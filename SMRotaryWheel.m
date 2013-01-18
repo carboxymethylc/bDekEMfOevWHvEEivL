@@ -129,7 +129,8 @@ static float maxAlphavalue = 1.0;
         
         
         im.transform = CGAffineTransformMakeRotation(angleSize*i);
-        im.alpha = minAlphavalue;
+        //im.alpha = minAlphavalue;
+        im.alpha = maxAlphavalue;
         im.tag = i;
         if (i == 0)
         {
@@ -156,7 +157,7 @@ static float maxAlphavalue = 1.0;
 	bg.image = [UIImage imageNamed:@"bg.png"];
     if(currentWheel ==2)
     {
-        //bg.image = [UIImage imageNamed:@"bg.png"];
+        bg.image = [UIImage imageNamed:@""];
     }
     
 	[self addSubview:bg];
@@ -186,6 +187,8 @@ static float maxAlphavalue = 1.0;
         return NO;
     }
     */
+    
+    
     // 2 - Calculate distance from center
     float dx = touchPoint.x - container.center.x;
     float dy = touchPoint.y - container.center.y;
@@ -196,7 +199,8 @@ static float maxAlphavalue = 1.0;
     
     // 5 - Set current sector's alpha value to the minimum value
 	UIImageView *im = [self getSectorByValue:currentSector];
-	im.alpha = minAlphavalue;
+	//im.alpha = minAlphavalue;
+    im.alpha = maxAlphavalue;
     return YES;
 }
 

@@ -25,7 +25,7 @@
     // 1 - Call super method
     [super viewDidLoad];
     // 2 - Create sector label
-	sectorLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 350, 120, 30)];
+	sectorLabel = [[UILabel alloc] initWithFrame:CGRectMake(100,420, 120, 30)];
 	sectorLabel.textAlignment = UITextAlignmentCenter;
 	[self.view addSubview:sectorLabel];
     // 3 - Set up rotary wheel

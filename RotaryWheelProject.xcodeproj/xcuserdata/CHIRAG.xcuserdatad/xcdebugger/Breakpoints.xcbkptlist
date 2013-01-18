@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SMRotaryWheel.m"
-         timestampString = "379968149.684158"
+         timestampString = "380047751.949391"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "159"
-         endingLineNumber = "159"
-         landmarkName = "-beginTrackingWithTouch:withEvent:"
+         startingLineNumber = "160"
+         endingLineNumber = "160"
+         landmarkName = "-drawWheel"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
